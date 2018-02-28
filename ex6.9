@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int try_one_coin(int *cents, int coin);
+void print_change(int cents);
+
+int main(int argc, char* argv[])
+{
+	
+	exit(EXIT_SUCCESS);
+}
+
+int try_one_coin(int *cents, int coin)
+{
+	int counter = 0;
+	while(*cents > coin)
+	{
+		*cents -= coin;
+		counter++
+	}
+	return counter++;
+}
+
+void print_change(int cents)
+{
+	while (cents > 0)
+	{
+		int _50 = try_one_coin(*cents, 50)
+		if (_50)
+			printf("%dx50c", _50);                 
+	}
+}

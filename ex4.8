@@ -1,0 +1,36 @@
+#include <stdio.h>
+#define PERLINE 8
+int main(int argc, char* argv[])
+{
+	printf("Enter a value for n_max:");
+	int n_max, maxSeed, maxCycles;
+	scanf("%d", &n_max);
+	
+	for (int i = 1; i < n_max; i++)
+	{
+		int cycles = 0;
+		while (n > 1)
+		{
+			printf("%5d ", n);
+			if (n % 2 == 0)
+				n = n/2;
+			else
+				n = 3 * n + 1;
+			if (n > n_max)
+				n_max = n;
+			cycles++;
+			if (cycles % PERLINE == 0)
+			{
+				printf("\n");
+			}
+		}
+		if (cycles > maxCycles)
+		{
+			maxCycles = cycles;
+			maxSeed = i;
+		} 
+	}
+	printf("\nThe longest cycle generated was %d cycles long.", maxCycles);
+	printf("\nIt had a seed value of %d.\n", maxSeed);
+	return 0;
+}
