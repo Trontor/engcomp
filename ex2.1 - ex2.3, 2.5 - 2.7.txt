@@ -1,0 +1,37 @@
+2.1
+  Invalid: subject#1, constant-value, speed!, 12oclock
+2.2
+  Note: When integers are divided, the result is rounded towards 0.
+  a = 6, b = 18, c = 16, d = 6 (see Note), e = 15, f = 10, g = 3
+2.3
+  a) area = r * r;
+  b) perimeter = 4*r;
+  c) area = 3.1415 * r * r;
+  d) perimeter = 2 * 3.1415 * r;
+  e) elapsed_hours = finish_hour - start_hour +
+                     (finish_min - start_min)/60
+                     + (finish_sec - start_sec)/3600;
+2.5
+    no, but probably my computer, right?
+2.6
+    Line 2: x = %8.4f isn't followed as there is no trailing 0
+    Line 4: %-15s fills missing characters from right to left, NOT left to right
+            (that's %15s)
+    Line 5: Extra space, ###3.1472 totals 9 characters exluding
+    Line 6: Format specifier %3d not followed
+    Line 7: Same issue as Line 5 and also %-15s not followed
+2.7
+    Input: 12 4.6 Z
+    Output: num = 3, n = 12, z = 4.6, c = Z
+
+    Input: 4.6 12 Z
+    Output: num = 3, n = 4, z = 0.6, c = 1
+
+    Input: 12 4.6 4.6
+    Output: num = 3, n = 12, z = 4.6, c = 4
+
+    Input:     12 4.6        Z
+    Output: num = 3, n = 12, z = 4.6, c = Z
+
+    Input:     12 4.6        Z
+    Output: num = 1, n = 1234, z = 9.99, c = 9 (default assignments)

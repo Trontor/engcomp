@@ -15,6 +15,6 @@ int main (int argc, char* argv[])
 	if (scanf("%d %d", &a, &b) != 2)
 		printf("Invalid input, cya.");
 	else
-		printf("%d is the bigger number.\n", max_2_ints(a,b));	
+		printf("%d is the bigger number.\n", max_2_ints(a,b));
 	return 0;
 }

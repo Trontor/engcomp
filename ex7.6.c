@@ -7,6 +7,15 @@ void int_swap();
 void recursive_selection_sort();
 int main(int argc, char* argv[])
 {
+	int a,b,c,d,e,f,g;
+	a = 6;
+	b = a + 3 * 4;
+	c = b - b % 4;
+	d = b/3;
+	e = a + b/2;
+	f = (a+b/2+c)/3;
+	g = a - b+ c - d + e -f;
+	printf("%d %d %d %d %d %d %d\n", a, b, c, d, e, f, 		g);
 	int Arr[MAXVAL];
 	printf("Enter up to %d integers seperated by a space:", MAXVAL);
 	int index = -1, value = 0;
@@ -44,7 +53,7 @@ void recursive_selection_sort(int A[], int n, int currentIndex)
 		if (A[i] < A[min])
 			min = i;
 	int_swap(&A[min], &A[currentIndex]);
-	recursive_selection_sort(A, n, currentIndex + 1);	
+	recursive_selection_sort(A, n, currentIndex + 1);
 }
 
 void int_swap(int* a, int* b)

@@ -21,6 +21,6 @@ int main (int argc, char* argv[])
 	if (scanf("%d %d %d %d", &a, &b, &c, &d) != 4)
 		printf("Invalid input, cya.");
 	else
-		printf("%d is the largest number.\n", max_4_ints(a,b,c,d));	
+		printf("%d is the largest number.\n", max_4_ints(a,b,c,d));
 	return 0;
 }

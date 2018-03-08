@@ -5,7 +5,7 @@ int main(int argc, char* argv[])
 	printf("Enter a value for n_max:");
 	int n_max, maxSeed, maxCycles;
 	scanf("%d", &n_max);
-	
+
 	for (int i = 1; i < n_max; i++)
 	{
 		int cycles = 0;
@@ -28,7 +28,7 @@ int main(int argc, char* argv[])
 		{
 			maxCycles = cycles;
 			maxSeed = i;
-		} 
+		}
 	}
 	printf("\nThe longest cycle generated was %d cycles long.", maxCycles);
 	printf("\nIt had a seed value of %d.\n", maxSeed);
