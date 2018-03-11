@@ -1,0 +1,26 @@
+Exercise 3.2 (these should be done in tutorial 2):
+    a) i=4, j=4
+    b) i=3, j=5, k=9
+    c) The second if statement evaluates always to TRUE because
+        an positive integer always returns true.
+        The correct if statement should be
+            if (month == 4 || month == 6 || month == e.t.c.
+        result is
+        days=30
+    d) The if statements aren't enclosed by curly braces, so even though
+        the statements x = x + 1 and y = y + 2 are indented, they are
+        not considered part of the if statement and thus run regardless
+        of the comparison in the if statement.
+        x=2, y=4
+    e) The second if statement uses =, which is the ASSIGNMENT operator
+        not ==, which is the EQUALITY operator
+        Thus, the return will be the value of the left operand of the
+        assignment (in this case, y).
+        Something to note is that this expression reduces to
+            else if (0)
+        which doesn't execute.
+        However, if x was > 0 then it would reduce to
+            else if (1)
+        which would execute the correct branch.
+        The result for the given code is:
+        y is greater
