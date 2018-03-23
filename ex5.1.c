@@ -9,7 +9,7 @@ int max_2_ints(int a, int b)
 
 int main (int argc, char* argv[])
 {
-	//Not really solid, haven't checked for a == b.
+	 //Not really solid, haven't checked for a == b.
 	printf("Enter your two integers separated by space:");
 	int a, b;
 	if (scanf("%d %d", &a, &b) != 2)
