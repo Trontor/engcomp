@@ -15,7 +15,7 @@ int max_4_ints(int a, int b, int c, int d)
 
 int main (int argc, char* argv[])
 {
-	//Not really solid, haven't checked for a == b.
+	 //Not really solid, haven't checked for a == b.
 	printf("Enter your four integers separated by space:");
 	int a, b, c, d;
 	if (scanf("%d %d %d %d", &a, &b, &c, &d) != 4)
