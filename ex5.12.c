@@ -14,7 +14,7 @@ int t_itr(int n)
 {
 	int sum, i;
 	sum = 0;
-	for (i = 1; i <=n; i ++) 
+	for (i = 1; i <=n; i++)
 	{
 		sum += i;
 	}

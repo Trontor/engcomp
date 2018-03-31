@@ -9,12 +9,12 @@ double my_log(int num, int base)
 }
 
 int log_star(double num, int base)
-{	
+{
 	double application = my_log(num, base);
 	printf("log_%d_(%lf) = %lf\n", base, num, application);
 	if (application < 1)
 		return 1;
-	return 1 + log_star(application, base);	 	
+	return 1 + log_star(application, base);
 }
 
 int main(int argc, char* argv[])

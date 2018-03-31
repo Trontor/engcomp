@@ -10,6 +10,6 @@ int main (int argc, char* argv[])
 	if (scanf("%d %d", &base, &exponent) != 2)
 		printf("Invalid input, cya.");
 	else
-		printf("Answer: %.2lf\n", pow(base, exponent));	
+		printf("Answer: %.2lf\n", pow(base, exponent));
 	return 0;
 }

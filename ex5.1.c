@@ -3,7 +3,7 @@
 int max_2_ints(int a, int b)
 {
 	if (a > b)
-		return a;
+		return a > b;
 	return b;
 }
 

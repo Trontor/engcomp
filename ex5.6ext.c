@@ -13,7 +13,7 @@ int factorSum(int num)
 
 int isAmicablePair(int a, int b)
 {
-	return factorSum(a) == b && factorSum(b) == a; 
+	return factorSum(a) == b && factorSum(b) == a;
 }
 
 int main(int argc, char* argv[])
@@ -22,9 +22,9 @@ int main(int argc, char* argv[])
 	printf("Do you want to restrict the number of pairs found? (Y/N): ");
 	char c;
 	scanf("%c", &c);
-	int n = -1; 
+	int n = -1;
 	if (c == 'Y')
-	{	
+	{
 		do
 		{
 			printf("How many pairs do you want to find?(>0): ");
@@ -38,10 +38,10 @@ int main(int argc, char* argv[])
 	{
 		int facSum = factorSum(a);
 		if (facSum != a && isAmicablePair(a, facSum) && a < facSum)
-			{
-				printf("%d and %d are amicable.\n", a, facSum); 
-				counter++;
-			}
+		{
+			printf("%d and %d are amicable.\n", a, facSum);
+			counter++;
+		}
 		if (n > 0 && counter == n)
 			break;
 		a++;
