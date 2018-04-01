@@ -15,7 +15,7 @@ int main(int argc, char* argv[])
 	e = a + b/2;
 	f = (a+b/2+c)/3;
 	g = a - b+ c - d + e -f;
-	printf("%d %d %d %d %d %d %d\n", a, b, c, d, e, f, 		g);
+	printf("%d %d %d %d %d %d %d\n", a, b, c, d, e, f,              g);
 	int Arr[MAXVAL];
 	printf("Enter up to %d integers seperated by a space:", MAXVAL);
 	int index = -1, value = 0;
@@ -24,7 +24,7 @@ int main(int argc, char* argv[])
 		index++;
 		Arr[index] = value;
 	}
-	/*recursive_*/selection_sort(Arr, index/*, 0*/);
+	/*recursive_*/ selection_sort(Arr, index /*, 0*/);
 	printf("\nSorted Array: ");
 	for (int i = 0; i <= index; i++)
 		printf("%d ", Arr[i]);

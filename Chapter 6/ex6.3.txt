@@ -1,0 +1,5 @@
+What do the two functions return?
+  dumb returns its parameter + 1
+  dumber returns 8
+What should be done to the programmer who wrote them?
+  Trivial proof, left up to the reader.

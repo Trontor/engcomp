@@ -1,0 +1,3 @@
+Point 1: trev, beth, pete, main, jane, bill (local int), argc, argv
+Point 2: bill (function), main(function), mary. zack, jane (local int), jack
+Point 3: dick, fred, dave, trev (double), bill(function), main(function)

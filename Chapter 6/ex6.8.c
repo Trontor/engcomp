@@ -11,7 +11,7 @@ int main(int argc, char* argv[])
 	while (scanf("%d/%d", &num, &den) == 2)
 	{
 		int_divide(num, den, &quo, &rem);
-		printf("The quotient is %d with remainder %d.\n", quo, rem); 
+		printf("The quotient is %d with remainder %d.\n", quo, rem);
 		printf("Feel free to enter another one:");
 	}
 	return 0;
