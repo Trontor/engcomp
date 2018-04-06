@@ -1,7 +1,15 @@
 #include <stdio.h>
 
+#define MAXVAL 1000
+
 int main(int argc, char* argv[]) {
-	int n = 123456;
-	scanf("%d", n);
-	return 0;
+	printf("Enter values, ^D to terminate:\n");
+	int A[MAXVAL], next, counter = 0;
+	while (scanf("%d", &next) == 1) {
+		A[counter++] = next;
+	}
+	char c = getchar();
+	printf("%d", c);
+	printf("\nFind the k'th smallest element  (k < %d):", counter + 1);
+
 }

@@ -2,46 +2,18 @@
 
 #define MAXVAL 1000
 
-void selection_sort();
-void int_swap();
-void recursive_selection_sort();
-int main(int argc, char* argv[])
-{
-	int a,b,c,d,e,f,g;
-	a = 6;
-	b = a + 3 * 4;
-	c = b - b % 4;
-	d = b/3;
-	e = a + b/2;
-	f = (a+b/2+c)/3;
-	g = a - b+ c - d + e -f;
-	printf("%d %d %d %d %d %d %d\n", a, b, c, d, e, f,              g);
-	int Arr[MAXVAL];
-	printf("Enter up to %d integers seperated by a space:", MAXVAL);
-	int index = -1, value = 0;
-	while (scanf("%d", &value) == 1 && index < MAXVAL)
-	{
-		index++;
-		Arr[index] = value;
+void int_swap(int* p1, int* p2);
+void selection_sort(int A[], int n);
+void print_int_array(int A[], int n);
+void recursive_selection_sort(int A[], int n, int currentIndex);
+int main(int argc, char* argv[]) {
+	printf("Enter values, terminate with ^D:");
+	int counter = 0, next, A[MAXVAL];
+	while (scanf("%d", &next) == 1) {
+		A[counter++] = next;
 	}
-	/*recursive_*/ selection_sort(Arr, index /*, 0*/);
-	printf("\nSorted Array: ");
-	for (int i = 0; i <= index; i++)
-		printf("%d ", Arr[i]);
-	printf("\n");
-	return 0;
-}
-
-void selection_sort(int A[], int n)
-{
-	for (int i = n; i >= 0; i--)
-	{
-		int min = i;
-		for (int j = 0; j < i; j++)
-			if (A[j] > A[min])
-				min = j;
-		int_swap(&A[i], &A[min]);
-	}
+	recursive_selection_sort(A, counter, 0);
+	print_int_array(A, counter);
 }
 
 void recursive_selection_sort(int A[], int n, int currentIndex)
@@ -56,9 +28,29 @@ void recursive_selection_sort(int A[], int n, int currentIndex)
 	recursive_selection_sort(A, n, currentIndex + 1);
 }
 
-void int_swap(int* a, int* b)
-{
-	int temp = *a;
-	*a = *b;
-	*b = temp;
+void selection_sort(int A[], int n) {
+	for (int i = n; i >= 0; i--)
+	{
+		int max = i;
+		for (int j = 0; j < i; j++) {
+			if (A[j] > A[max]) {
+				max = j;
+			}
+			int_swap(&A[i], &A[max]);
+		}
+	}
+}
+
+void print_int_array(int A[], int n) {
+	int i;
+	for (i=0; i<n; i++) {
+		printf("%d ", A[i]);
+	}
+	printf("\n");
+}
+
+void int_swap(int* p1, int* p2)  {
+	int temp = *p1;
+	*p1 = *p2;
+	*p2 = temp;
 }
