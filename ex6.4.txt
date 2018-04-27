@@ -1,9 +1,0 @@
-The ampersand symbol before a variable changes the return type of the expression
-to the direct memory address of the variable.
-
-It is used to directly access a variable's value through its memory location.
-This allows variables outside the function's scope to be modified by a function.
-
-The code fragment would try to assign the input to memory location 123456 rather
-than the variable 'n'. The program most likely does not have access to this location
-and will crash.
